@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Learning Career Path Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">Name
+        <input type="text" id="name" placeholder="Enter your name"required>
+      </label>
+      <label for="email" id="email-label">Email
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </label>
+      <label for="number" id="number-label">Age(optional)
+        <input type="number" id="number" placeholder="Age"required min=13 max=40>
+      </label>
+      </fieldset>
+      <fieldset>
+        <p>Which option best describe your current role</p>
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time learner</option>
+            <option value="prefer">Prefer not say</option>
+            <option value="other">Others</option>
+          </select>
+      </fieldset>
+      <fieldset>
+       <p>Would you like to recommend FreeCodeCamp to a friend?
+       </p>
+        <label>
+          <input type="radio" value="Definitely" name="recommend">Definitely
+        </label>
+        <label>
+          <input type="radio" value="maybe" name="recommend">Maybe
+          </label> 
+          <label>
+            <input type="radio" value="not sure" name="recommend">Not Sure
+          </label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label>
+          <input type="checkbox" value="front-end" name="improve">Front-end Projects
+        </label>
+        <label>
+          <input type="checkbox" value="back-end" name="improve">Back-end Projects
+        </label>
+        <label>
+          <input type="checkbox" value="data" name="improve">Data Visualization
+        </label>
+         <label>
+          <input type="checkbox" value="challenges" name="improve">Challenges
+        </label>
+         <label>
+          <input type="checkbox" value="open" name="improve">Open Source Community
+        </label>
+         <label>
+          <input type="checkbox" value="gitter" name="improve">Gitter help rooms
+        </label>
+        <label>
+          <input type="checkbox" value="videos" name="improve">Videos
+        </label>
+         <label>
+          <input type="checkbox" value="city" name="improve">City Meetups
+        </label>
+         <label>
+          <input type="checkbox" value="wiki" name="improve">Wiki
+        </label>
+         <label>
+          <input type="checkbox" value="forum" name="improve">Forum
+        </label>
+         <label>
+          <input type="checkbox" value="courses" name="improve">Additional Courses
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Any comments or suggestions?
+          <textarea rows=3 col=100></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+</body>
+</html>
